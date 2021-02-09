@@ -7,6 +7,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0px;
+    overflow-x: hidden;
 }
 .menu{
     display: flex;
@@ -20,7 +21,7 @@ body{
     justify-content: flex-end;
     position: fixed;
     right:0%;
-    bottom: 35%;
+    bottom: 25%;
 }
 .menu > p{
     background-color: rgba(0, 0, 0, 0.5);
@@ -64,7 +65,7 @@ body{
     margin-left: 10%;
 }
 .container{
-    height: 100vh;
+    height: 101vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,6 +128,40 @@ body{
     color:wheat;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+.academics{
+    background-color: whitesmoke;
+    justify-content: flex-start;
+}
+.academics-specification{
+    font-size: 200%;
+    margin: 1% 0% 0% 1%;
+    font-weight: bold;
+}
+.academics-description{
+    margin: 0.5% 0% 0% 6%;
+    color:grey;
+    font-size: 150%;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.skills{
+    background-color: rgb(2, 8, 14);
+    justify-content: flex-start;
+    padding: 0%;
+}
+.logo-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 25%;
+    margin-bottom:0px;
+    padding: 0px;
+}
+.logo{
+    margin: 1%;
+    height: 80%;
+    width: 15%;
 }
 ::-webkit-scrollbar {
     width: 10px;
