@@ -1,5 +1,6 @@
 html{
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0px;
@@ -88,7 +89,7 @@ body{
     overflow-wrap: break-word;
     word-break: keep-all;
 }
-.about-heading{
+.heading{
     color:white;
     background-color: red;
     font-size:250%;
