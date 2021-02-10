@@ -2,11 +2,8 @@ html{
     padding: 0px;
 }
 body{
-    background-image: url("../public/17520.jpg");
-    background-color:white;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0px;
+    background-color: #202020;
     overflow-x: hidden;
 }
 .menu{
@@ -14,6 +11,7 @@ body{
     flex-direction: column;
     align-items: center;
     opacity: 80%;
+    text-decoration: none;
 }
 .menu-bar{
     display: flex;
@@ -65,10 +63,17 @@ body{
     margin-left: 10%;
 }
 .container{
-    height: 101vh;
+    width: 100%;
+    min-height: 101vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.home{
+    background-image: url("../public/17520.jpg");
+    background-color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .contact-details{
     font-size: 200%;
@@ -80,7 +85,8 @@ body{
     background-color: rgb(113, 114, 114);
 }
 .about{
-    width:70%;
+    overflow-wrap: break-word;
+    word-break: keep-all;
 }
 .about-heading{
     color:white;
@@ -158,10 +164,93 @@ body{
     margin-bottom:0px;
     padding: 0px;
 }
-.logo{
+.skills-logo{
     margin: 1%;
-    height: 80%;
-    width: 15%;
+    width: 14%;
+    max-height: 150px;
+}
+.projects{
+    justify-content: flex-start;
+    background-color: antiquewhite;
+}
+.contact{
+    justify-content: flex-start;
+    background-color: #202020;
+}
+.contact-whatsapp{
+    margin: 8% 0% 0% 15%;
+    font-size: 150%;
+    color: white;
+}
+.contact-whatsapp > p:nth-child(1){
+    font-weight: bolder;
+    font-size: 180%;
+    font-style: italic;
+    margin-bottom: 0%;
+}
+.contact-whatsapp > p:nth-last-child(1){
+    margin-left:50%;
+    margin-top: 5%;
+}
+.mail-logo{
+    height: 35%;
+    width: 12%;
+}
+.mail-form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 2%;
+    margin-right: 1%;
+    flex-wrap: wrap;
+    padding-right: 6%;
+}
+.mail-form > div > label, .mail-form > div> input,  .mail-form > div > textarea{
+    color: white;
+    font-size: 150%;
+    display: block;
+    margin: 2% 10% ;
+}
+.mail-form > div > input, .mail-form > div > textarea{
+    margin: 0% 2% 5% 20%;
+    max-width: 80vh;
+    min-width: 80vh;
+    background-color: rgb(145, 139, 139);
+    border:none;
+    padding: 3%;
+    outline: none;
+}
+.mail-form > div > textarea{
+    width: 100%;
+    resize: none;
+}
+.mail-form > div > button{
+    margin-left:20%;
+    font-size: 150%;
+    display: block;
+    width: 106%;
+    padding: 2%;
+    background-color: green;
+    outline: none;
+    border-radius: 5px;
+}
+.mail-form > div > input:focus{
+    width: 100%;
+    background-color: skyblue;
+}
+.extra-link{
+    margin-top: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0%;
+    height: 10%;
+}
+.extra-link > div{
+    text-align: center;
+}
+.link-logo{
+    height: 30px;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -180,3 +269,49 @@ body{
 ::-webkit-scrollbar-track:hover {
     box-shadow: inset 0 0 5px green; 
   }
+@media screen and (max-width:700px){
+    .mail-form > div > input, .mail-form > div > textarea{
+        margin: 0% 2% 5% 10%;
+        max-width: 90vh;
+        min-width: 90vh;
+        background-color: rgb(145, 139, 139);
+        border:none;
+        padding: 3%;
+        outline: none;
+    }
+    .mail-form > div > button{
+        margin: 0% 2% 5% 10%;
+        display: block;
+        width: 106%;
+        padding: 2%;
+        background-color: green;
+        outline: none;
+        border-radius: 5px;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px){
+    .mail-form > div > input, .mail-form > div > textarea{
+        margin: 0% 2% 5% 10%;
+        max-width: 75vh;
+        min-width: 75vh;
+        background-color: rgb(145, 139, 139);
+        border:none;
+        padding: 3%;
+        outline: none;
+    }
+    .mail-form > div > button{
+        margin: 0% 2% 5% 10%;
+        display: block;
+        width: 106%;
+        padding: 2%;
+        background-color: green;
+        outline: none;
+        border-radius: 5px;
+    }
+}
