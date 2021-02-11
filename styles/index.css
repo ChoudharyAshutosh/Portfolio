@@ -305,6 +305,9 @@ body{
     }
 }
 @media screen and (max-width:600px){
+    .menu-bar{
+        display: none !important;
+    }
     .mail-form > div > input, .mail-form > div > textarea{
         margin: 0% 2% 5% 10%;
         max-width: 70vh;
@@ -378,4 +381,10 @@ body{
     .contact-whatsapp > p:nth-last-child(1) {
         margin-left: 10%;
         margin-top: 5%;
+}
+}
+@media screen and (max-height:500px){
+    .menu-bar{
+        display: none !important;
+    }
 }
