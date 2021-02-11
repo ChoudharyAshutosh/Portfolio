@@ -23,13 +23,14 @@ body{
     bottom: 25%;
 }
 .menu > p{
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.5);
     margin:0%;
     padding:15px;
     width: 150px;
     min-height: 5vh !important;
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 150%;
     color: whitesmoke;
     transition: transform .2s;
     text-decoration: none;
@@ -38,7 +39,7 @@ body{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .menu > p:hover{
-    font-size: 1.55rem;
+    font-size: 155%;
     color: red;
     padding: 7px;
     min-height: 5vh !important;
@@ -64,7 +65,8 @@ body{
     margin-left: 10%;
 }
 .container{
-    width: 100%;
+    margin: 0%;
+    min-width: 250px;
     min-height: 101vh;
     display: flex;
     flex-direction: column;
@@ -87,7 +89,7 @@ body{
 }
 .about{
     overflow-wrap: break-word;
-    word-break: keep-all;
+    word-break: break-all;
 }
 .heading{
     color:white;
@@ -276,8 +278,8 @@ body{
 @media screen and (max-width:700px){
     .mail-form > div > input, .mail-form > div > textarea{
         margin: 0% 2% 5% 10%;
-        max-width: 90vh;
-        min-width: 90vh;
+        max-width: 80vh;
+        min-width: 80vh;
         background-color: rgb(145, 139, 139);
         border:none;
         padding: 3%;
@@ -291,6 +293,9 @@ body{
         background-color: green;
         outline: none;
         border-radius: 5px;
+    }
+    .image-container{
+        align-self: flex-end;
     }
     .about-content{
         display: flex;
@@ -302,8 +307,9 @@ body{
 @media screen and (max-width:600px){
     .mail-form > div > input, .mail-form > div > textarea{
         margin: 0% 2% 5% 10%;
-        max-width: 75vh;
-        min-width: 75vh;
+        max-width: 70vh;
+        min-width: 70vh;
+        font-size: 100%;
         background-color: rgb(145, 139, 139);
         border:none;
         padding: 3%;
@@ -313,9 +319,63 @@ body{
         margin: 0% 2% 5% 10%;
         display: block;
         width: 106%;
+        font-size: 100%;
         padding: 2%;
         background-color: green;
         outline: none;
         border-radius: 5px;
     }
+    .about > p, .about > div{
+        font-size:100%;
+    }
+    .heading{
+        font-size: 150%;
+    }
+    .brief{
+        font-size: 200%;
+    }
+    .intro-class > h2{
+        font-size: 120%;
+    }
+    .contact-whatsapp{
+        font-size: 130% !important;
+    }
+    .contact-whatsapp > p:nth-child(){
+        font-size: 100% !important;
+    }
+    .contact-whatsapp > p:nth-last-child(){
+        font-size: 100% !important;
+        margin-left:0% !important;
+        margin-top: 0% !important;
+    }
+    .academics-specification{
+        font-size: 130%;
+    }
+    .academics-description{
+        font-size: 100%;
+    }
+}
+@media screen and (max-width:300px){
+    html{
+        overflow-x: hidden;
+    }
+    .mail-form > div > input, .mail-form > div > textarea{
+        margin: 0% 2% 5% 10%;
+        max-width: 55vh;
+        min-width: 55vh;
+        font-size: 100%;
+        background-color: rgb(145, 139, 139);
+        border:none;
+        padding: 1%;
+        outline: none;
+    }
+    .mail-form > div > button{
+        width: 58vh;
+    }
+    .mail-form{
+        padding-right: 20%;
+    }
+    .contact-whatsapp > p:nth-last-child(1) {
+        margin-left: 10%;
+        margin-top: 5%;
 }
