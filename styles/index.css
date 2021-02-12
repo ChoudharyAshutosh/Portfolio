@@ -275,6 +275,137 @@ body{
 ::-webkit-scrollbar-track:hover {
     box-shadow: inset 0 0 5px green; 
   }
+/*@media screen and (min-height:500px){
+  */  @media screen and (max-width:700px){
+        .mail-form > div > input, .mail-form > div > textarea{
+            margin: 0% 2% 5% 10%;
+            max-width: 70vh;
+            min-width: 70vh;
+            font-size: 100%;
+            background-color: rgb(145, 139, 139);
+            border:none;
+            padding: 3%;
+            outline: none;
+        }        
+        .mail-form > div > button{
+            margin: 0% 2% 5% 10%;
+            display: block;
+            width: 106%;
+            padding: 2%;
+            font-size: 100%;
+            background-color: green;
+            outline: none;
+            border-radius: 5px;
+        }
+        .image-container{
+            align-self: flex-end;
+        }
+        .about-content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width:600px){
+        .menu-bar{
+            display: none !important;
+        }
+    
+        .mail-form > label{
+            font-size: 100%;
+        }
+        .mail-logo{
+            display: block;
+        }
+        .mail-form > div > input, .mail-form > div > textarea{
+            max-width: 60vh;
+            min-width: 60vh;
+        }
+        .mail-form > div > button{
+            width: 64vh;
+        }
+        .about > p, .about > div{
+            font-size:100%;
+        }
+        .heading{
+            font-size: 150%;
+        }
+        .brief{
+            font-size: 200%;
+        }
+        .intro-class > h2{
+            font-size: 120%;
+        }
+        .contact-whatsapp{
+            font-size: 130% !important;
+        }
+        .contact-whatsapp > p:nth-child(){
+            font-size: 100% !important;
+        }
+        .contact-whatsapp > p:nth-last-child(){
+            font-size: 100% !important;
+            margin-left:0% !important;
+            margin-top: 0% !important;
+        }
+        .academics-specification{
+            font-size: 130%;
+        }
+        .academics-description{
+            font-size: 100%;
+        }
+    }
+    @media screen and (max-width:500px){
+        .mail-form{
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .mail-form > div > input, .mail-form > div > textarea{
+            max-width: 50vh;
+            min-width: 50vh;
+        }
+        .mail-form > div > button{
+            width: 53.5vh;
+        }
+    }
+    @media screen and (max-width:400px){
+        .mail-form{
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .mail-form > div > input, .mail-form > div > textarea{
+            max-width: 40vh;
+            min-width: 40vh;
+        }
+        .mail-form > div > button{
+            width: 43vh;
+        }
+    }
+    @media screen and (max-width:300px){
+        html{
+            overflow-x: hidden;
+        }
+        .mail-logo{
+            display: block;
+        }
+        .mail-form > div > input, .mail-form > div > textarea{
+            max-width: 30vh;
+            min-width: 30vh;
+        }
+        .mail-form > div > button{
+            width: 32.2vh;
+        }
+        .mail-form{
+            padding-right: 20%;
+        }
+        .contact-whatsapp > p:nth-last-child(1) {
+            margin-left: 10%;
+            margin-top: 5%;
+    }
+    }/*
+}/*
 @media screen and (max-width:700px){
     .mail-form > div > input, .mail-form > div > textarea{
         margin: 0% 2% 5% 10%;
@@ -404,7 +535,7 @@ body{
         margin-left: 10%;
         margin-top: 5%;
 }
-}
+}*/
 @media screen and (max-height:500px){
     .menu-bar{
         display: none !important;
