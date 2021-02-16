@@ -342,7 +342,7 @@ body{
         width: 64vh;
         min-width: 395px;
     }
-    .about > p, .about > div{
+    .about-data > p, .contact-data > p, .about > div{
         font-size:100%;
     }
     .heading{
