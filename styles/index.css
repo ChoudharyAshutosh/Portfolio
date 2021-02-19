@@ -53,8 +53,12 @@ body{
     border-bottom: 0px;
 }
 .data{
-    margin: 0% 1% 1% 1%;
+    margin: 0% 1% 2% 1%;
+    padding-bottom: 1%;
     box-shadow: 5px 0px 10px 3px rgb(44, 44, 44,0.5);
+}
+.data > p > a{
+    word-wrap: break-word;
 }
 .image-container{
     width: 30%;
@@ -153,21 +157,37 @@ body{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+.project-technology-formatting{
+    color: #0d27ee;
+}
+.project-instructions{
+    color: crimson;
+}
+.project-link{
+    color: green;
+}
 .academics{
-    background-color: whitesmoke;
+    background-color: white;
     justify-content: flex-start;
 }
-.academics-specification{
+.academics-specification, .project-name{
     font-size: 200%;
     margin: 1% 0% 0% 1%;
     font-weight: bold;
 }
-.academics-description{
+.project-name{
+    color:blue;
+}
+.academics-description, .project-description{
     margin: 0.5% 0% 0% 6%;
     color:grey;
     font-size: 150%;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
+}
+.project-description{
+    color: rgb(36, 37, 35);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .skills{
     background-color: rgb(2, 8, 14);
@@ -190,7 +210,7 @@ body{
 }
 .projects{
     justify-content: flex-start;
-    background-color: antiquewhite;
+    background-color: white;
     min-height: 50vh;
 }
 .contact{
@@ -365,10 +385,10 @@ body{
         margin-left:0% !important;
         margin-top: 0% !important;
     }
-    .academics-specification{
+    .academics-specification, .project-name{
         font-size: 130%;
     }
-    .academics-description{
+    .academics-description, .project-description{
         font-size: 100%;
     }
 }
