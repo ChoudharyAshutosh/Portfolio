@@ -391,6 +391,9 @@ body{
     .academics-description, .project-description{
         font-size: 100%;
     }
+    .data{
+        box-shadow: 5px 0px 5px 3px rgba(153, 152, 152, 0.5);
+    }
 }
 @media screen and (max-width:500px){
     .mail-form{
