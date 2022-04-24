@@ -121,7 +121,7 @@
     });
     
     window.addEventListener('scroll',()=>{
-        console.log(scrollElement.scrollTop)
+        //console.log(scrollElement.scrollTop)
         if(scrollElement.scrollTop < document.querySelector("#about-heading").offsetTop)
             selectHome();
         else if(scrollElement.scrollTop < document.querySelector("#experience-heading").offsetTop)
