@@ -81,6 +81,24 @@
         contact.style.color="blueviolet";
     }
     
+    const onScrollSelect = ()=>{
+        //console.log(scrollElement.scrollTop)
+        if(scrollElement.scrollTop < document.querySelector("#about-heading").offsetTop)
+            selectHome();
+        else if(scrollElement.scrollTop < document.querySelector("#experience-heading").offsetTop)
+            selectAbout();
+        else if(scrollElement.scrollTop < document.querySelector("#academics-heading").offsetTop)
+            selectExperience();
+        else if(scrollElement.scrollTop < document.querySelector("#skills-heading").offsetTop)
+            selectAcademics();
+        else if(scrollElement.scrollTop < document.querySelector("#projects-heading").offsetTop)
+            selectSkills();
+        else if(scrollElement.scrollTop < document.querySelector("#contact-heading").offsetTop)
+            selectProjects();
+        else
+            selectContact();
+    }
+
     home.addEventListener('click',()=>{
         scrollElement.scrollTop=0;
     });
@@ -120,23 +138,7 @@
         window.open("mailto:choudharyashutosh7070@gmail.com?subject="+subject.value+"&body="+name.value+":"+body.value,"_black");
     });
     
-    window.addEventListener('scroll',()=>{
-        //console.log(scrollElement.scrollTop)
-        if(scrollElement.scrollTop < document.querySelector("#about-heading").offsetTop)
-            selectHome();
-        else if(scrollElement.scrollTop < document.querySelector("#experience-heading").offsetTop)
-            selectAbout();
-        else if(scrollElement.scrollTop < document.querySelector("#academics-heading").offsetTop)
-            selectExperience();
-        else if(scrollElement.scrollTop < document.querySelector("#skills-heading").offsetTop)
-            selectAcademics();
-        else if(scrollElement.scrollTop < document.querySelector("#projects-heading").offsetTop)
-            selectSkills();
-        else if(scrollElement.scrollTop < document.querySelector("#contact-heading").offsetTop)
-            selectProjects();
-        else
-            selectContact();
-    })
+    window.addEventListener('scroll',onScrollSelect)
 
     linkedin.addEventListener("click",()=>{
         window.open("https://www.linkedin.com/in/ashutosh-choudhary-73baa1189","_blank");
@@ -146,5 +148,5 @@
         window.open("https://github.com/ChoudharyAshutosh","_blank");
     });
 
-    selectHome();
+    onScrollSelect();
 })();
