@@ -82,18 +82,18 @@
     }
     
     const onScrollSelect = ()=>{
-        //console.log(scrollElement.scrollTop)
-        if(scrollElement.scrollTop < document.querySelector("#about-heading").offsetTop)
+        //console.log(scrollElement.scrollTop);
+        if((scrollElement.scrollTop+150) < document.querySelector("#about-heading").offsetTop)
             selectHome();
-        else if(scrollElement.scrollTop < document.querySelector("#experience-heading").offsetTop)
+        else if((scrollElement.scrollTop+150) < document.querySelector("#experience-heading").offsetTop)
             selectAbout();
-        else if(scrollElement.scrollTop < document.querySelector("#academics-heading").offsetTop)
+        else if((scrollElement.scrollTop+150) < document.querySelector("#academics-heading").offsetTop)
             selectExperience();
-        else if(scrollElement.scrollTop < document.querySelector("#skills-heading").offsetTop)
+        else if((scrollElement.scrollTop+150) < document.querySelector("#skills-heading").offsetTop)
             selectAcademics();
-        else if(scrollElement.scrollTop < document.querySelector("#projects-heading").offsetTop)
+        else if((scrollElement.scrollTop+150) < document.querySelector("#projects-heading").offsetTop)
             selectSkills();
-        else if(scrollElement.scrollTop < document.querySelector("#contact-heading").offsetTop)
+        else if((scrollElement.scrollTop+150) < document.querySelector("#contact-heading").offsetTop)
             selectProjects();
         else
             selectContact();
