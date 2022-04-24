@@ -10,7 +10,7 @@ body{
 .menu{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     opacity: 80%;
     text-decoration: none;
 }
@@ -23,7 +23,8 @@ body{
     bottom: 25%;
 }
 .menu > p{
-    z-index: 100;
+    position: sticky;
+    z-index: 20;
     background-color: rgba(0, 0, 0, 0.5);
     margin:0%;
     padding:15px;
@@ -41,9 +42,8 @@ body{
 .menu > p:hover{
     font-size: 155%;
     color: red;
-    padding: 7px;
-    min-height: 5vh !important;
-    transform:scale(1.15);
+    width: 160px;
+    transform: scaleX(1.15);
 }
 .menu > p:nth-child(1){
     border-top-left-radius: 10px;
