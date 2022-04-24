@@ -81,6 +81,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
 }
 .home{
     background-image: url("../public/17520.jpg");
@@ -171,7 +172,7 @@ body{
     background-color: white;
     justify-content: flex-start;
 }
-.academics-specification, .project-name{
+.academics-specification, .project-name, .company-specification{
     font-size: 200%;
     margin: 1% 0% 0% 1%;
     font-weight: bold;
@@ -179,7 +180,23 @@ body{
 .project-name{
     color:blue;
 }
-.academics-description, .project-description{
+.company-specification-name{
+    font-weight: 600;
+}
+.designation-name{
+    color: red;
+    font-weight: 600;
+}
+.company-technology-specification{
+    color: blue ;
+}
+.company-tasks-specification{
+    color: blueviolet ;
+}
+.company-duration{
+    color: lightcoral;
+}
+.academics-description, .project-description, .company-description{
     margin: 0.5% 0% 0% 6%;
     color:rgb(37,36,35);
     font-size: 150%;
@@ -348,7 +365,9 @@ body{
     .menu-bar{
         display: none !important;
     }
-
+    .container{
+        min-height: fit-content;
+    }
     .mail-form > label{
         font-size: 100%;
     }
@@ -386,10 +405,10 @@ body{
         margin-left:0% !important;
         margin-top: 0% !important;
     }
-    .academics-specification, .project-name{
+    .academics-specification, .project-name, .company-specification{
         font-size: 130%;
     }
-    .academics-description, .project-description{
+    .academics-description, .project-description, .company-description{
         font-size: 100%;
     }
     .data{

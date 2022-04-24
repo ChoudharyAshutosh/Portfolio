@@ -2,6 +2,7 @@
     let scrollElement=document.querySelector("html");
     let home=document.querySelector("#home");
     let about=document.querySelector("#about");
+    let experience=document.querySelector("#experience");
     let academics=document.querySelector("#academics");
     let skills=document.querySelector("#skills");
     let projects=document.querySelector("#projects");
@@ -14,6 +15,9 @@
     });
     about.addEventListener('click',()=>{
         scrollElement.scrollTop=document.querySelector("#about-heading").offsetTop;
+    });
+    experience.addEventListener('click',()=>{
+        scrollElement.scrollTop=document.querySelector("#experience-heading").offsetTop;
     });
     academics.addEventListener('click',()=>{
         scrollElement.scrollTop=document.querySelector("#academics-heading").offsetTop;
