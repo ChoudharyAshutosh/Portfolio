@@ -148,5 +148,55 @@
         window.open("https://github.com/ChoudharyAshutosh","_blank");
     });
 
+    const setReactNativeExperience = ()=>{
+        let reactNativeExperienceElements=document.querySelectorAll('.react-native-experience');
+        let totalExperienceElements=document.querySelectorAll('.total-experience');
+        let today = new Date();
+        let rnStartingDate = new Date('08/16/2021');
+        let diff = Math.abs(today - rnStartingDate)/1000;
+        let rnExperienceArray = {};   
+        let totalExperienceArray = {}; 
+        let totalDiff = diff + 10518984;            // adding 4 months in seconds
+        let session = {
+            year: 31536000,
+            month: 2592000,
+        };
+        let rnExperienceStr = '';
+        let totalExperienceStr = '';
+
+        Object.keys(session).forEach(function(key){
+            rnExperienceArray[key] = Math.floor(diff / session[key]);
+            totalExperienceArray[key] = Math.floor(totalDiff / session[key]);
+            diff -= rnExperienceArray[key] * session[key];
+            totalDiff -= totalExperienceArray[key] * session[key];
+        });
+        for(let sessionName in rnExperienceArray){
+            if(rnExperienceStr != ''){
+                rnExperienceStr += ' ';
+                totalExperienceStr += ' ';
+            }
+            if(rnExperienceArray[sessionName]>0){
+                rnExperienceStr += `${rnExperienceArray[sessionName]} ${sessionName}`;
+                if(rnExperienceArray[sessionName]>1){
+                    rnExperienceStr += 's';
+                }
+            }
+            if(rnExperienceArray[sessionName]>0){
+                totalExperienceStr += `${totalExperienceArray[sessionName]} ${sessionName}`;    
+                if(totalExperienceArray[sessionName]>1){
+                    totalExperienceStr += 's';
+                }
+            }
+        }
+        
+        for(let index in reactNativeExperienceElements){
+            reactNativeExperienceElements[index].innerHTML = rnExperienceStr;
+        }
+        for(let index in totalExperienceElements){
+            totalExperienceElements[index].innerHTML = totalExperienceStr;
+        }
+    }
+
+    setReactNativeExperience();
     onScrollSelect();
 })();
