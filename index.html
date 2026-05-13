@@ -1,266 +1,319 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Ashutosh-Choudhary-Portfolio</title>
-        <link rel="stylesheet" href="styles/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="menu-bar">
-            <div class="menu">
-                <p id="home">home</p>
-                <p id="about">about</p>
-                <p id="experience">experience</p>
-                <p id="academics">academics</p>
-                <p id="skills">skills</p>
-                <p id="projects">projects</p>
-                <p id="contact">contact</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashutosh Choudhary — Software Engineer specializing in React Native, React.js, Node.js, and full-stack development. 4+ years building scalable web and mobile applications.">
+    <meta name="keywords" content="ashutosh choudhary, software engineer, react native developer, full stack developer, portfolio, react native, react js, node js">
+    <meta name="author" content="Ashutosh Choudhary">
+    <meta property="og:title" content="Ashutosh Choudhary — Software Engineer">
+    <meta property="og:description" content="Software Engineer | React Native Developer | Full Stack Developer. 4+ years building scalable web and mobile apps.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://choudharyashutosh.github.io/portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ashutosh Choudhary — Software Engineer">
+    <meta name="twitter:description" content="Software Engineer specializing in React Native, React.js, Node.js, and full-stack development.">
+    <link rel="icon" type="image/png" href="public/55288012.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <title>Ashutosh Choudhary — Software Engineer</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="menu" role="menubar">
+            <p id="home" role="menuitem" tabindex="0">Home</p>
+            <p id="about" role="menuitem" tabindex="0">About</p>
+            <p id="experience" role="menuitem" tabindex="0">Experience</p>
+            <p id="academics" role="menuitem" tabindex="0">Academics</p>
+            <p id="skills" role="menuitem" tabindex="0">Skills</p>
+            <p id="projects" role="menuitem" tabindex="0">Projects</p>
+            <p id="contact" role="menuitem" tabindex="0">Contact</p>
+        </div>
+    </nav>
+
+    <section class="container home" id="home-section">
+        <div class="intro-class reveal">
+            <h1 class="greeting">Hi, I'm</h1>
+            <h1 class="name">Ashutosh Choudhary</h1>
+            <h2 class="tagline"><span class="typing-text"></span><span class="cursor">|</span></h2>
+            <p class="subtitle">Software Developer &middot; Web Developer &middot; Mobile Developer &middot; Full Stack Developer</p>
+            <div class="hero-actions">
+                <a href="#contact-section" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects-section" class="btn btn-outline">View Projects</a>
             </div>
         </div>
-        <div class="container home">
-            <div>
-                <div class="intro-class">
-                    <h1 class="brief">Hi, I am Ashutosh Choudhary</h1>
-                    <h2>Enthusiastic Software Developer (Mobile and Web)</h2>
+    </section>
+
+    <section class="container info" id="about-section">
+        <div class="heading reveal" id="about-heading">About</div>
+        <div class="about-content reveal">
+            <div class="about">
+                <div class="about-data card">
+                    <p>Results-driven Software Engineer with <span class="total-experience"></span> of experience building scalable web and mobile applications. I specialize in React Native, React.js, Node.js, and PHP — delivering high-traffic B2B and B2C platforms, real-time systems, inventory and fleet management solutions, and delivery management applications that solve real business problems.</p>
+                    <p>Currently crafting <span class="react-native-experience"></span> in React Native backed by expertise across the full stack.</p>
                 </div>
-            </div>
-        </div>
-        <div class="container info">
-            <div class="heading" id="about-heading">
-                About
-            </div>
-            <div class="about-content">
-                <div class="about">
-                    <div class="about-data bg-white">
-                        <p>I am a Software Developer (Web and Mobile), who loves to bring order in chaos by building challenging and inspiring solutions those make people life easier, by utilising great skills i.e React Native, React JS, Express, PHP etc.</p>
-                        <p>I have <span class="total-experience"></span> experience including <span class="react-native-experience"></span> React Native experience, 4 Months React JS experience.</p>
-                    </div>
-                    <div class="contact-heading">Contact Details : </div>
-                    <div class="contact-container">
-                        <div class="image-container">
-                            <div class="left-inverted-border-radius"></div>
-                            <div class="image-wrapper">
-                                <img class="image" src="public/55288012.png">
-                            </div>
-                            <div class="right-inverted-border-radius"></div>
-                        </div>    
-                        <div class="contact-data bg-white">
-                            <p class="contact-details">Ashutosh Choudhary</p>
-                            <p class="contact-details">+919368475886</p>
-                            <p class="contact-details">+918449055438</p>
-                            <p class="contact-details">choudharyashutosh7070@gmail.com</p>
+                <div class="contact-heading reveal">Contact Details</div>
+                <div class="contact-container reveal">
+                    <div class="image-container">
+                        <div class="image-wrapper">
+                            <img class="image" src="public/55288012.png" alt="Ashutosh Choudhary">
                         </div>
                     </div>
+                    <div class="contact-data card">
+                        <p class="contact-details">Ashutosh Choudhary</p>
+                        <p class="contact-details">+91 93684 75886</p>
+                        <p class="contact-details">+91 84490 55438</p>
+                        <p class="contact-details">choudharyashutosh7070@gmail.com</p>
+                    </div>
                 </div>
-        </div>
-        </div>
-        <div class="container academics">
-            <div class="heading" id="experience-heading">
-                Work Experience
-            </div>
-            <div class="data">
-                <div class="company-specification">Kinematic Foodtech Pvt Ltd (Sprink.Online)</div>
-                <p class="company-description">
-                    <span class="company-specification-name">Designation </span>:
-                    <span class="designation-name"> Software Developer</span>
-                </p>
-                <p class="company-description">
-                    <span class="company-specification-name">Duration </span>:
-                    <span class="company-duration"> <span class="react-native-experience"></span> (Engaged) </span>
-                </p>
-                <p class="company-description">
-                    <span class="company-specification-name">Technology used</span>:
-                    <span class="company-technology-specification"> PHP, Lamp Stack, React Native</span>
-                </p>
-                <p class="company-description">
-                    <span class="company-specification-name">Daily tasks </span>:
-                    <span class="company-tasks-specification"> Managing organization’s web and mobile applications by upgrading old features and adding new features i.e firebase messaging and notification, order tracking, delivery proof capturing, orders summary downloading(excel and pdf) , feedback capturing, review and downloading(excel and pdf), invoice generation, role based authorisation, role creation and updation, menu image capturing, food ordering, raw material and product evaluation, one time partner order(temporary client), speech based search, partner client onboarding, partner food counter tracking, displaying 7 day food calendar etc. </span>
-                </p>
-            </div>
-            <div class="data">
-                <div class="company-specification">Ramco Systems</div>
-                <p class="company-description">
-                    <span class="company-specification-name">Designation </span>:
-                    <span class="designation-name"> Project UI Trainee</span>
-                </p>
-                <p class="company-description">
-                    <span class="company-specification-name">Duration </span>:
-                    <span class="company-duration"> 4 Months</span>
-                </p>
-                <p class="company-description">
-                    <span class="company-specification-name">Technology used</span>:
-                    <span class="company-technology-specification"> Nebula software, APICuiro, React JS</span>
-                </p>
-                <p class="company-description">
-                    <span class="company-specification-name">Daily tasks </span>:
-                    <span class="company-tasks-specification"> Web page creation and maintenance, API designing, Integrating APIs with web pages</span>
-                </p>
             </div>
         </div>
-        <div class="container academics">
-            <div class="heading" id="academics-heading">
-                Academics
+    </section>
+
+    <section class="container experience" id="experience-section">
+        <div class="heading reveal" id="experience-heading">Experience</div>
+        <div class="data card reveal">
+            <div class="company-specification">Sprink (Kinematic Foodtech Pvt Ltd)</div>
+            <p class="company-description">
+                <span class="label">Designation</span>:
+                <span class="designation-name">Software Engineer</span>
+            </p>
+            <p class="company-description">
+                <span class="label">Duration</span>:
+                <span class="company-duration"><span class="react-native-experience"></span> (Current)</span>
+            </p>
+            <p class="company-description">
+                <span class="label">Stack</span>:
+                <span class="company-tech">React Native, React.js, Node.js, PHP, MySQL, Redis, Firebase</span>
+            </p>
+            <p class="company-description">
+                <span class="label">Impact</span>:
+                <span class="company-tasks">Built and optimized real-time systems for high-traffic B2B and B2C platforms using Redis and Firebase. Developed HRMS, inventory management, fleet management, and order management modules. Implemented ElasticSearch-based global search, push notifications, and real-time synchronization. Managed Android and iOS application deployment and performance optimization.</span>
+            </p>
+        </div>
+        <div class="data card reveal">
+            <div class="company-specification">Ramco Systems</div>
+            <p class="company-description">
+                <span class="label">Designation</span>:
+                <span class="designation-name">Project UI Trainee</span>
+            </p>
+            <p class="company-description">
+                <span class="label">Duration</span>:
+                <span class="company-duration">April 2021 &ndash; August 2021</span>
+            </p>
+            <p class="company-description">
+                <span class="label">Stack</span>:
+                <span class="company-tech">Nebula, APICuiro, React JS</span>
+            </p>
+            <p class="company-description">
+                <span class="label">Impact</span>:
+                <span class="company-tasks">Developed responsive UI screens using React.js, JavaScript, HTML, and CSS. Built enterprise-grade frontend components using the Nebula framework.</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="container academics" id="academics-section">
+        <div class="heading reveal" id="academics-heading">Academics</div>
+        <div class="data card reveal">
+            <div class="academics-specification">B.Tech, Computer Science & Engineering</div>
+            <p class="academics-description">Sanskriti University &mdash; Chhata, Mathura</p>
+            <p class="academics-description">Aug 2018 &ndash; Jun 2022 &middot; CGPA 8.5</p>
+        </div>
+        <div class="data card reveal">
+            <div class="academics-specification">Intermediate (RBSE)</div>
+            <p class="academics-description">Mayur Public School &mdash; Jaipur</p>
+            <p class="academics-description">2016 &ndash; 2018 &middot; PCM 75%</p>
+        </div>
+        <div class="data card reveal">
+            <div class="academics-specification">High School (CBSE)</div>
+            <p class="academics-description">Shri Bhawani Niketan Public School &mdash; Jaipur</p>
+            <p class="academics-description">2015 &ndash; 2016 &middot; CGPA 8.0</p>
+        </div>
+    </section>
+
+    <section class="container skills" id="skills-section">
+        <div class="heading reveal" id="skills-heading">Skills</div>
+        <div class="skills-grid reveal">
+            <div class="skill-item">
+                <img class="skills-logo" alt="JavaScript" src="./public/javascript.svg">
+                <span>JavaScript</span>
             </div>
-            <div class="data">
-                <div class="academics-specification">Bachelor of Technology, Computer Science & Engineering</div>
-                <p class="academics-description">Sanskriti University - Chhata(Mathura)</p>
-                <p class="academics-description">August 2018 - June 2022</p>
-                <p class="academics-description">CGPA - 8.15</p>
+            <div class="skill-item">
+                <img class="skills-logo" alt="HTML5" src="./public/html5.svg">
+                <span>HTML5</span>
             </div>
-            <div class="data">
-                <div class="academics-specification">Intermediate, RBSE</div>
-                <p class="academics-description">Mayur Public School - Jaipur</p>
-                <p class="academics-description">2017 - 2018</p>
-                <p class="academics-description">Percentage(PCM) - 75%</p>
+            <div class="skill-item">
+                <img class="skills-logo" alt="CSS3" src="./public/css3.svg">
+                <span>CSS3</span>
             </div>
-            <div class="data">
-                <div class="academics-specification">High School, CBSE</div>
-                <p class="academics-description">Shri Bhawani Niketan Public School - Jaipur</p>
-                <p class="academics-description">2015 - 2016</p>
-                <p class="academics-description">CGPA - 8.0</p>
+            <div class="skill-item">
+                <img class="skills-logo" alt="React" src="./public/react.svg">
+                <span>React</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="React Native" src="./public/react-native.svg">
+                <span>React Native</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="Express" src="./public/express.svg">
+                <span>Express</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="Bootstrap" src="./public/bootstrap.svg">
+                <span>Bootstrap</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="Git" src="./public/git.svg">
+                <span>Git</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="PHP" src="./public/php.svg">
+                <span>PHP</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="jQuery" src="./public/jquery.svg">
+                <span>jQuery</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="MySQL" src="./public/mysql.svg">
+                <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="Node.js" src="./public/node-dot-js.svg">
+                <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="Firebase" src="./public/firebase.svg">
+                <span>Firebase</span>
+            </div>
+            <div class="skill-item">
+                <img class="skills-logo" alt="Redis" src="./public/redis.svg">
+                <span>Redis</span>
             </div>
         </div>
-        <div class="container skills">
-            <div class="heading" id="skills-heading">
-                Skills
-            </div>
-            <div class="logo-container">
-                <img class="skills-logo" alt="JavaScript" src="./public/javascript.png">
-                <img class="skills-logo" alt="HTML" src="./public/html.png">
-                <img class="skills-logo" alt="CSS" src="./public/css.png">
-                <img class="skills-logo" alt="React JS" src="./public/react-js.png">
-                <img class="skills-logo" alt="React Native" src="./public/react-native.png">
-                <img class="skills-logo" alt="Express JS" src="./public/express-js.png">
-            </div>
-            <div class="logo-container">
-                <!-- <img class="skills-logo" alt="Arduino" src="./public/arduino.png"> -->
-                <!-- <img class="skills-logo" alt="Raspberry Pi" src="./public/raspberry-pi.png"> -->
-                <!-- <img class="skills-logo" alt="Node.JS" src="./public/node.png"> -->
-                <!-- <img class="skills-logo" alt="Node-Red" src="./public/node-red.png"> -->
-                <img class="skills-logo" alt="Bootstrap" src="./public/bootstrap.png">
-                <img class="skills-logo" alt="Github" src="./public/git.png">
-                <img class="skills-logo" alt="Github" src="./public/php.png">
-                <img class="skills-logo" alt="Github" src="./public/jquery.png">
-                <img class="skills-logo" alt="Github" src="./public/mysql.png">
-            </div>
-            <div class="logo-container">
-                <!-- <img class="skills-logo" alt="Internet of Things" src="./public/iot.png"> -->
-                <!-- <img class="skills-logo" alt="C language" src="./public/c.png"> -->
-                <!-- <img class="skills-logo" alt="C++ language" src="./public/c++.png">
-                <img class="skills-logo" alt="Java" src="./public/java.png"> -->
-            </div>
-        </div>
-        <div class="container projects">
-            <div class="heading" id="projects-heading">
-                projects
-            </div>
-            <div class="data">
+    </section>
+
+    <section class="container projects" id="projects-section">
+        <div class="heading reveal" id="projects-heading">Projects</div>
+        <div class="projects-grid">
+            <div class="data card reveal">
                 <div class="project-name">Chatting App</div>
-                <p class="project-description">This is a real time chatting application that provides only text based chatting facilities. It has common features that a chatting application  have like sending & receiving messages, maintaning & deleting chat history, adding & deleting connection. It has been setted up with dummy login having username='administrator' & password='administrator' but user have to use unique id before using it, if ID will not be unique then there wll be collision with other's chat. I preffered to use gmail as it is unique. IT does not ability to register user, it only provides chatting service.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>Node.Js, Express.Js, JavaScript, HTML, CSS, MQTT Protocol</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/Chhatting-App.git" target="_blank">https://github.com/ChoudharyAshutosh/Chhatting-App.git</a></p>
+                <p class="project-description">Real-time text messaging with chat history, contact management, and unique ID-based sessions built on MQTT protocol.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> Node.js, Express.js, JavaScript, MQTT</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/Chhatting-App.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">News App</div>
-                <p class="project-description">As name suggest, this is news showing application that uses Currents API for real time data. It also have news filters that can be applied to fetch relevant news. It shows news in many languages and from many countries. It has functionality of fectching news on loading. It has 600 requests per day for fetching news.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>React JS</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/NewsApp.git" target="_blank">https://github.com/ChoudharyAshutosh/NewsApp.git</a></p>
+                <p class="project-description">Multi-language news aggregator powered by the Currents API with real-time filtering, language/country scoping, and 600 daily requests.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> React JS</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/NewsApp.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
-                <div class="project-name">Home Automation Using Google Assistance</div>
-                <p class="project-description">This is Home Automation project, in which home appliances are controlled by Web based Dasboard, Google Home App and by Google Assistance. It is a small demostration of controlling home appliances with google assistance. It can be expanded to controll fan, refrigerator, television etc. Currently, it controlls a light bulb.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>C/C++, Arduino IDE, ESP32 module, Relay module, Node-Red, Google Home App</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/Home-Automation-Using-Google-Assistance.git" target="_blank">https://github.com/ChoudharyAshutosh/Home-Automation-Using-Google-Assistance.git</a></p>
+            <div class="data card reveal">
+                <div class="project-name">Home Automation</div>
+                <p class="project-description">Smart home control via Google Assistant, Google Home app, and web dashboard using ESP32 and relay modules.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> C/C++, Arduino, ESP32, Node-Red</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/Home-Automation-Using-Google-Assistance.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Dictionary App</div>
-                <p class="project-description">As name suggest, this a application which provides specific word meaning. It uses Oxford API for fetching details. It shows both noun meaning and adverb meaning of searched word. Since it is a front-end project, it does not have database and does not stores history of searched words.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>React JS</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/Dictionary.git" target="_blank">https://github.com/ChoudharyAshutosh/Dictionary.git</a></p>
+                <p class="project-description">Word meaning lookup using the Oxford API, returning noun and adverb definitions with a clean React interface.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> React JS</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/Dictionary.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
-                <div class="project-name">Youtube Clone App</div>
-                <p class="project-description">As name suggest, this is application like youtube, which shows some videos and and have one video selected on player and others as list, it also have functionality of search for getting required videos. And it also have functionality of playing video from list just by clicking it. It has functionalty of liking and commenting, since it is front-end project, likes and comments are not stored in database.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>React JS</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/Youtube-Clone.git" target="_blank">https://github.com/ChoudharyAshutosh/Youtube-Clone.git</a></p>
+            <div class="data card reveal">
+                <div class="project-name">YouTube Clone</div>
+                <p class="project-description">Video browsing app with search, player, playlists, likes, and comments — simulating core YouTube UX in a front-end only application.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> React JS</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/Youtube-Clone.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Video Call App</div>
-                <p class="project-description">As name suggest, this is a web based video calling application. This application lets users to connect on video call with room support, means more than two users can interact simultaneously. This application also has form like chat functionality.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>Express JS, Peer JS</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/express-video-call.git" target="_blank">https://github.com/ChoudharyAshutosh/express-video-call.git</a></p>
+                <p class="project-description">Web-based video conferencing with room support for multi-user calls and an integrated chat panel.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> Express JS, Peer JS</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/express-video-call.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Scribbler Project</div>
-                <p class="project-description">This is a front-end project with hard coded data. It has three pages home page, postslist page, post page.In it login form, sign up form, post deletion and post modifying abilities are set.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>JavaScript, HTML, CSS</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/Scribbler-project.git" target="_blank">https://github.com/ChoudharyAshutosh/Scribbler-project.git</a></p>
+                <p class="project-description">Multi-page blog-style front-end with login/sign-up flows, post creation, deletion, and management using hardcoded data.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> JavaScript, HTML, CSS</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/Scribbler-project.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Contact List App</div>
-                <p class="project-description">This is basic demo of react native navigation, this app gets its data from random user’s API. Two versions of it are created one with tab navigation and other with drawer navigation, and both also includes stack navigation and deep linking.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>React Native, Expo</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link1(with tab navigation) : </span><a href="https://github.com/ChoudharyAshutosh/react-native-contact_list-tab-navigation-.git" target="_blank">https://github.com/ChoudharyAshutosh/react-native-contact_list-tab-navigation-.git</a></p>
-                <p class="project-description"><span class="project-link">Link2(with drawer navigation) : </span><a href="https://github.com/ChoudharyAshutosh/react-native-contact_list-drawer-navigation-.git" target="_blank">https://github.com/ChoudharyAshutosh/react-native-contact_list-drawer-navigation-.git</a></p>
+                <p class="project-description">React Native navigation demo with tab and drawer variants, stack navigation, deep linking, and random user API integration.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> React Native, Expo</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/react-native-contact_list-tab-navigation-.git" target="_blank" rel="noopener">Tab Nav &rarr;</a> &nbsp; <a class="project-link" href="https://github.com/ChoudharyAshutosh/react-native-contact_list-drawer-navigation-.git" target="_blank" rel="noopener">Drawer Nav &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Timer App</div>
-                <p class="project-description">As name suggest, this is an application where you can setup different timers for different task, and update timer details It is application for both Android and iOS.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>React Native, Expo</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/Timer-App.git" target="_blank">https://github.com/ChoudharyAshutosh/Timer-App.git</a></p>
+                <p class="project-description">Cross-platform timer manager for Android and iOS — create, update, and track multiple timers simultaneously.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> React Native, Expo</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/Timer-App.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Message App Layout</div>
-                <p class="project-description">This is a layout of chat like a chat application offers, it can be intgreated with with other app for making it functional and using it. It uses Media Library, and Location API of reactive native.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>React Native, Expo</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/message_app_layout.git" target="_blank">https://github.com/ChoudharyAshutosh/message_app_layout.git</a></p>
+                <p class="project-description">Chat UI layout using React Native Media Library and Location APIs — designed for integration into full messaging apps.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> React Native, Expo</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/message_app_layout.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
-            <div class="data">
+            <div class="data card reveal">
                 <div class="project-name">Proman</div>
-                <p class="project-description">It is a backend project which features endpoints for login, registering, creating, updating & deleting users. It has PostgreSQL database attached for storing data. It can be integrated with any application just by calling API’s offered by it. It works on MVC architecture.</p>
-                <p class="project-description"><span class="project-technology-formatting">Technology Used : </span>Java, Spring Boot, PostgreSQL, Hibernate, Rest API</p>
-                <p class="project-description"><span class="project-instructions">How To Use : </span>Refer README file for operating details.</p>
-                <p class="project-description"><span class="project-link">Link : </span><a href="https://github.com/ChoudharyAshutosh/proman.git" target="_blank">https://github.com/ChoudharyAshutosh/proman.git</a></p>
+                <p class="project-description">RESTful user management backend with login, registration, CRUD, and PostgreSQL persistence following MVC architecture.</p>
+                <p class="project-description"><span class="project-tech">Stack:</span> Java, Spring Boot, PostgreSQL, Hibernate</p>
+                <p class="project-description"><a class="project-link" href="https://github.com/ChoudharyAshutosh/proman.git" target="_blank" rel="noopener">View on GitHub &rarr;</a></p>
             </div>
         </div>
-        <div class="container contact">
-            <div class="heading" id="contact-heading">
-                Contact
-            </div>
-            <div class="mail-form">
-                <img class="mail-logo" src="./public/mail.png">
-                <div>
-                    <label>Name </label>
-                    <input type="text" id="name" name="name" required>
-                    <label>Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                    <label>Body</label>
-                    <textarea type="text" rows="3" id="body" name="body" required></textarea>
-                    <button id="send">Submit</button>
+    </section>
+
+    <section class="container contact" id="contact-section">
+        <div class="heading reveal" id="contact-heading">Contact</div>
+        <div class="contact-wrapper reveal">
+            <div class="mail-form card">
+                <div class="form-header">
+                    <img class="mail-logo" src="public/mail.svg" alt="Email">
+                    <h3>Send a Message</h3>
                 </div>
-                <div class="contact-whatsapp">
-                    <p>Call On :</p>
-                    <p>+919368475886</p>
+                <div class="form-body">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Message</label>
+                        <textarea rows="4" id="body" name="body" required placeholder="Your message..."></textarea>
+                    </div>
+                    <button id="send" class="btn btn-primary">Send Message</button>
                 </div>
             </div>
-            <div class="extra-link">
-                <div>
-                    <img id="linkedin" class="link-logo logo-button" src="./public/linked-in.png">
-                    <img class="link-logo" src="./public/vertical-bar.png">
-                    <img id="github" class="link-logo logo-button" src="./public/github.png">
+            <div class="contact-info card reveal">
+                <div class="contact-phone">
+                    <p class="contact-label">Call or WhatsApp</p>
+                    <p class="contact-value">+91 93684 75886</p>
+                </div>
+                <div class="social-links">
+                    <p class="contact-label">Connect</p>
+                    <div class="social-icons">
+                        <img id="linkedin" class="link-logo logo-button" src="./public/linked-in.png" alt="LinkedIn" title="LinkedIn">
+                        <img id="github" class="link-logo logo-button" src="./public/github.png" alt="GitHub" title="GitHub">
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="./scripts/index.js"></script>
-    </body>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Ashutosh Choudhary. Built with vanilla everything.</p>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+</body>
 </html>
